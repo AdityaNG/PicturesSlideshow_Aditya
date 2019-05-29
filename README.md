@@ -47,16 +47,16 @@ Utility for Copy Stream
  Necessary for the image downloading in ImageLoader Class
 # Screenshots
 - Main Activity
-![](./screenshots/0.png =250x)
+![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/0.png | width=100)
 
 - Fullscreen Activity
-![](./screenshots/2.png =250x)
-![](./screenshots/3.png =250x)
-![](./screenshots/1.png =250x)
+![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/2.png | width=100)
+![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/3.png | width=100)
+![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/1.png | width=100)
 
 
 - App Icon
-![](./screenshots/icon.png =125x)
+![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/icon.png | width=100)
 
 
 ### Databse Design and Structure :
