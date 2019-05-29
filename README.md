@@ -5,6 +5,9 @@
 - Chose from multiple channels
 - Picture's time configuration pulled from Firebase servers.
 
+- Download the APK from : https://github.com/AdityaNG/PicturesSlideshow_Aditya/blob/master/app-debug.apk
+- ![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/icon.png)
+
 # Getting Started
 1. Clone the Repository
 2. Open up Android Studio and hit "Import Android Studio Project'
