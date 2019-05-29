@@ -47,7 +47,7 @@ Utility for Copy Stream
  Necessary for the image downloading in ImageLoader Class
 # Screenshots
 - Main Activity
-![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/0.png)
+- ![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/0.png)
 
 - Fullscreen Activity
 - ![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/2.png)
