@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "696519530608",
+    "firebase_url": "https://dobby-developer-task-android.firebaseio.com",
+    "project_id": "dobby-developer-task-android",
+    "storage_bucket": "dobby-developer-task-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696519530608:android:9e90caae9042e699",
+        "android_client_info": {
+          "package_name": "com.ng.dobbypictures"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696519530608-6nsv7km312pjhi0k04ne0qfj3hpa67n3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ng.dobbypictures",
+            "certificate_hash": "9994194083271d2c4d72eeaba7134c90e6826771"
+          }
+        },
+        {
+          "client_id": "696519530608-26f248kddp18tfgcgn4hl0omq6hkva9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw3iYFA1Zs3Zgf_BlMWpLQTi3uviEvaOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696519530608-26f248kddp18tfgcgn4hl0omq6hkva9a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

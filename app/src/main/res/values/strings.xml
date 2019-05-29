@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Aditya Pictures</string>
+    <string name="sel">Select a Channel</string>
+    <string-array name="channels">
+        <item>Beach</item>
+        <item>Cherry Blossom</item>
+        <item>Sunset</item>
+        <item>Trees</item>
+    </string-array>
+
+    <string name="title_activity_fullscreen">Channel</string>
+</resources>
