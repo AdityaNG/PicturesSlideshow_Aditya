@@ -50,13 +50,13 @@ Utility for Copy Stream
 ![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/0.png | width=100)
 
 - Fullscreen Activity
-![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/2.png | width=100)
-![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/3.png | width=100)
-![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/1.png | width=100)
+- ![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/2.png | width=100)
+- ![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/3.png | width=100)
+- ![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/1.png | width=100)
 
 
 - App Icon
-![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/icon.png | width=100)
+- ![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/icon.png | width=100)
 
 
 ### Databse Design and Structure :
