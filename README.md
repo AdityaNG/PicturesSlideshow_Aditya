@@ -47,17 +47,16 @@ Utility for Copy Stream
  Necessary for the image downloading in ImageLoader Class
 # Screenshots
 - Main Activity
-<br><img src="https://previews.dropbox.com/p/thumb/AAeWOrDBISvfuP40RkmvPwi3gzrECtwF_4u_LBIx3FwVdSUJfbpAZ_YQwbisNCwNF3gBXUYvGyBrQJnOcVKXgRd-pzhkpyix_RyoO2D3dg7wjT15X8QQVKH2CtWyTu_4UXFtik27xQiWDqsV_gvV0Hekrai8On7EFYwsUg6W4lMYr_LfqteXBO8H8-ea0B0T2mqnCsxXr8zIxEYcp2mlZ9DATSSTaQrDIIGVakWuA-kZ0EFosclmrYx2-0P8m-5xMHeatTA9l6w2TEYsUfuIAofmFNPV7Bvaea5Oht0YXD5m1IaNOxFgvHOnsDhol6fE7m4Vra330FNB67cNJqil5N4j/p.png?fv_content=true&size_mode=5" style="width:200px;"/>
-
+![](./screenshots/0.png =250x)
 
 - Fullscreen Activity
-1. <img src="https://previews.dropbox.com/p/thumb/AAeeaceaKF1Uo0t59U7L7Q3lpN47t5EcCQAIuiMX789WxcBsVrsJ5oQ7oZ5Vz_GjSAJunh2lTKe0M2PHO5qSM_N0eZ6hfKRLtqxaeJRaVFglK1WeCTo5PY96DXBvgFyfZLhNaZWv0FkfsdXG34GD1NS7hck_6ZLNbHw3PTHYYEIqTvZhhWlL81r8zexWEg_B5Gv10w5UAmcgiNFJWIPC6KnHVHASp_eGBqGueM5UC1nSphs7J3hkXE3aPuBuua6cINw_3J-4gbtIHDNKoSqBjQ197BiTTAxXcrA9DdQpUo6LKgLNQgdv_tKnN9DPmoPxcFVgl6AdXYz3UpB71mAv5223/p.png?size=1600x1200&size_mode=3" style="width:200px;"/>
-2. <img src="https://previews.dropbox.com/p/thumb/AAfV7PjNszrDlUVn2jLIqQBtRMp1Hn0ru7NHOpm5oMTLpnyo0J7e_8KdhBYIRrl9v9SHQubKP88hKT9Is7XGshbCkd2vwEkzYQsZ4nAY9hwdSLMoyFke_ZaEs8nPbnHfLKJqigjUXI2Hm5ggMrzMe7asiEkSZ84PXOvTDtL0H-qMyuKEQ0pleajHAfGizQBqbT_Ry6z6fYWIBwL_P6dVstKRczaEgyCHDw3XjVUzEj7gPvRtdkEclzeSPBKCryqo-UNa9X6ed8atTt_MpdCGXahyVP4IJxkgyY4s1MUCdpU5OMJBXN02gSrAWxcklKbhh51FH25N2eQJ0yj_xuIqRifG/p.png?fv_content=true&size_mode=5" style="width:200px;"/>
-3. <img src="https://previews.dropbox.com/p/thumb/AAeVdZfDxPUuA3FY7MnZ_3MinpXO5fp-bDGv5axU4srMQCFz4UK9KFdwXPdOOGzICWg9tyEmb2yQuxunREkEBoWO1hSLUlhH28luT-4M0nZoFVTy3WJ-IhrDH0NGzuHgdoU6k89eLxbbCDM57LvEdtwZ1Sp5L8rCDNMx0SFe0ay3YGS1NPM6c31dgmzSzZ3W1tJOQqOfx5kWYu7CoDZj9sxsiGgb8i55iq70PKZaMv7b9G2HaybioIssb5fLxEchXWwXQeZha5cNgKrdSxuQl0Tmn2kFte3OThUuMYU2uvewj6LcEC1aXI8vlmCVYPOSsC6VGVt_PIps8ELTj0cAWRD9/p.png?fv_content=true&size_mode=5" style="width:200px;"/>
+![](./screenshots/2.png =250x)
+![](./screenshots/3.png =250x)
+![](./screenshots/1.png =250x)
 
 
 - App Icon
-<br><img src="https://ucf84c43f6c205b16b7474e5ea56.previews.dropboxusercontent.com/p/thumb/AAfZ3D6FSWkDB5RQDVTL9AHh4zZbtNochcAagw8WxFcrboHI2lhGEbEeLx-JBjEFRDG5Bnt8f8HjpWSY4kfXZXSKEKHTtyAUVy9g_IBMRjHkCe6-RPs_RGK7UhbpATiZPHL38HbDOXVfJlovofKpvxKSI9AzFMq59xb3X1zT9ziCyYoK0xNqy1Z2tNXZX9Y0dBfzrqvdxpD3OVpy6z7QKIBCLJiSHyCskwl6PQxgYZDWBOZcIVk0hL8z0vjZJdkPJ13s71c_qnteVMN-rl1c8ZoCoBhHIhwDQYRyszdg4QfkEm4L3i-y9TY0rS-1iauXbtBLsXT8jmB2EMExFB4ieVTua87tPHA0Ndp8CRSNNZpeSMglyWzp8v2EaxM04KvpKL4/p.png?fv_content=true&size_mode=5" style="width:150px;"/>
+![](./screenshots/icon.png =125x)
 
 
 ### Databse Design and Structure :
