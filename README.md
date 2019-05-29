@@ -18,36 +18,36 @@
 # Java Files Breakdown
 ### MainActivity
 Landing Activity of the App
-  Allows user to :
-       1. Chose from multiple Channels
-       2. Start Slideshow
-       3. Checks for Read/Write Permissions
+Allows user to :
+1. Chose from multiple Channels
+2. Start Slideshow
+3. Checks for Read/Write Permissions
 ### FullscreenActivity
 Fullscreen Activity for the Slideshow
- Allows user to :
-       1. View the Slideshow
-       2. Checks for updates for said show on the fly without interruptions
-       3. Change channel by revisiting Main Activity
+Allows user to :
+1. View the Slideshow
+2. Checks for updates for said show on the fly without interruptions
+3. Change channel by revisiting Main Activity
 
 ### FileCache
 FileCache class handles the creation, access, delete request for the image cache files
 
 ### ImageLoader
 Loads the Images, either from cache or Web
- Handles :
-       1. Caching of Images
-       2. Cache Naming Scheme
-       3. Clear Cache function
+Handles :
+1. Caching of Images
+2. Cache Naming Scheme
+3. Clear Cache function
 
 ### MemoryCache
 Loads the Images, either from cache or Web
-  Handles :
-       1. Get Bitmap by Key
-       2. Put Bitmap by Key
-       3. Clear Cache function
+Handles :
+1. Get Bitmap by Key
+2. Put Bitmap by Key
+3. Clear Cache function
 ### Utils
 Utility for Copy Stream
- Necessary for the image downloading in ImageLoader Class
+Necessary for the image downloading in ImageLoader Class
 # Screenshots
 - Main Activity
 - ![](https://raw.githubusercontent.com/AdityaNG/PicturesSlideshow_Aditya/master/screenshots/0.png)
@@ -76,56 +76,56 @@ Response :
   "fields": {
     "pictures": {
       "arrayValue": {
-        "values": [
-          {
-            "mapValue": {
-              "fields": {
-                "time": {
-                  "integerValue": "10"
-                },
-                "url": {
-                  "stringValue": "https://cdn.shopify.com/s/files/1/0022/0774/4115/products/shirofugen2_1024x1024@2x.jpg?v=1547238249"
-                }
-              }
-            }
-          },
-          {
-            "mapValue": {
-              "fields": {
-                "time": {
-                  "integerValue": "15"
-                },
-                "url": {
-                  "stringValue": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/cherry-blossom-tree-kristine-mueller-griffith.jpg"
-                }
-              }
-            }
-          },
-          {
-            "mapValue": {
-              "fields": {
-                "time": {
-                  "integerValue": "15"
-                },
-                "url": {
-                  "stringValue": "https://i.pinimg.com/originals/f2/cb/22/f2cb22a0a8fa04a51a28d6802c19db8a.jpg"
-                }
-              }
-            }
-          },
-          {
-            "mapValue": {
-              "fields": {
-                "time": {
-                  "integerValue": "12"
-                },
-                "url": {
-                  "stringValue": "https://upload.wikimedia.org/wikipedia/commons/8/87/Cerisiers_en_fleurs_au_parc_de_Sceaux.JPG"
-                }
-              }
-            }
-          }
-        ]
+ "values": [
+   {
+     "mapValue": {
+"fields": {
+  "time": {
+    "integerValue": "10"
+  },
+  "url": {
+    "stringValue": "https://cdn.shopify.com/s/files/1/0022/0774/4115/products/shirofugen2_1024x1024@2x.jpg?v=1547238249"
+  }
+}
+     }
+   },
+   {
+     "mapValue": {
+"fields": {
+  "time": {
+    "integerValue": "15"
+  },
+  "url": {
+    "stringValue": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/cherry-blossom-tree-kristine-mueller-griffith.jpg"
+  }
+}
+     }
+   },
+   {
+     "mapValue": {
+"fields": {
+  "time": {
+    "integerValue": "15"
+  },
+  "url": {
+    "stringValue": "https://i.pinimg.com/originals/f2/cb/22/f2cb22a0a8fa04a51a28d6802c19db8a.jpg"
+  }
+}
+     }
+   },
+   {
+     "mapValue": {
+"fields": {
+  "time": {
+    "integerValue": "12"
+  },
+  "url": {
+    "stringValue": "https://upload.wikimedia.org/wikipedia/commons/8/87/Cerisiers_en_fleurs_au_parc_de_Sceaux.JPG"
+  }
+}
+     }
+   }
+ ]
       }
     },
     "title": {
