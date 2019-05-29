@@ -46,10 +46,13 @@ public class ImageLoader {
         executorService=Executors.newFixedThreadPool(5);
     }
 
-    int x, y;
-    public void DisplayImage(String url, ImageView imageView, int xi, int yi)
+    /**
+     * Pulls the Image from where ever available
+     * @param url Image's URL
+     * @param imageView The ImageView to update once the Image data is loaded
+     */
+    public void DisplayImage(String url, ImageView imageView)
     {
-        x = xi; y = yi;
         imageViews.put(imageView, url);
         Bitmap bitmap=memoryCache.get(url);
         if(bitmap!=null)
@@ -60,12 +63,22 @@ public class ImageLoader {
         }
     }
 
+    /**
+     * Adds the image request to queue
+     * @param url Image's URL
+     * @param imageView The ImageView to update once the Image data is loaded
+     */
     private void queuePhoto(String url, ImageView imageView)
     {
         PhotoToLoad p=new PhotoToLoad(url, imageView);
         executorService.submit(new PhotosLoader(p));
     }
 
+    /**
+     * Pulls Image Bitmap from Cache or Web
+     * @param url Image's URL
+     * @return Bitmap of the Image corresponding to said URL
+     */
     private Bitmap getBitmap(String url)
     {
         File f=fileCache.getFile(url);
@@ -95,7 +108,11 @@ public class ImageLoader {
         }
     }
 
-    //decodes image and scales it to reduce memory consumption
+    /**
+     * Decodes image and scales it to reduce memory consumption
+     * @param f File to process
+     * @return Bitmap of the Image from said File f
+     */
     private Bitmap decodeFile(File f){
         try {
             //decode image size
@@ -126,7 +143,9 @@ public class ImageLoader {
         return null;
     }
 
-    //Task for the queue
+    /**
+     * Task for the queue
+     */
     private class PhotoToLoad
     {
         public String url;
@@ -165,7 +184,9 @@ public class ImageLoader {
         return false;
     }
 
-    //Used to display bitmap in the UI thread
+    /**
+     * Used to display bitmap in the UI thread
+     */
     class BitmapDisplayer implements Runnable
     {
         Bitmap bitmap;

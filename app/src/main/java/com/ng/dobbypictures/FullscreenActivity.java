@@ -1,7 +1,6 @@
 package com.ng.dobbypictures;
 
 import android.content.Intent;
-import android.graphics.Point;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -10,7 +9,6 @@ import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Display;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -124,6 +122,7 @@ public class FullscreenActivity extends AppCompatActivity {
                             Log.d(TAG, "URL : " + p[i].url + " ; Time : " + p[i].time);
                         }
 
+                        preLoad(p);
                         //Check if the Timer has run out before calling looper(p)
                         new CountDownTimer(2000, 20) {
 
@@ -199,15 +198,14 @@ public class FullscreenActivity extends AppCompatActivity {
         // ImageLoader class instance
         ImageLoader imgLoader = new ImageLoader(getApplicationContext());
 
-        Display display = getWindowManager().getDefaultDisplay();
-        Point size = new Point();
-        display.getSize(size);
-        imgLoader.DisplayImage(image_url, image, size.x, size.y);
+        imgLoader.DisplayImage(image_url, image);
 
 
-        CountDownTimer p_counter = new CountDownTimer(time * 1000, 10) {
+        CountDownTimer p_counter = new CountDownTimer(time * 1000, 50) {
 
             public void onTick(long millisUntilFinished) {
+                Log.d(TAG, "millisUntilFinished: " + millisUntilFinished);
+                Log.d(TAG, "total: " + (time*1000) );
                 ProgressBar prg = findViewById(R.id.progressBar);
                 prg.setProgress((int)millisUntilFinished/(time*10));
             }
@@ -222,12 +220,8 @@ public class FullscreenActivity extends AppCompatActivity {
                     CurrentIndex = CurrentIndex%p.length;
                     DownloadList(ch);
                 } else {
-                    Log.d(TAG, "p.length : " + p.length);
-                    Log.d(TAG, "CurrentIndex1 : " + CurrentIndex);
                     CurrentIndex++;
                     CurrentIndex = CurrentIndex%p.length;
-                    Log.d(TAG, "CurrentIndex2 : " + CurrentIndex);
-
                     /**
                      * In the end, function looper(final Picture... p) calls itself indefinitely
                      * (Until user pressed 'Back' or 'Change Channel')
@@ -240,8 +234,28 @@ public class FullscreenActivity extends AppCompatActivity {
     }
 
     /**
-     *
+     * Recursively iterates through the list of Pictures
+     * Preloads the pictures into Cache
+     * @param p Array of Pictures that are to be pulled
      */
+    private void preLoad(final Picture... p) {
+
+        for (int i=0; i<p.length; i++) {
+
+            // Imageview to show
+            ImageView image = findViewById(R.id.dummy_content);
+
+            // Image url
+            String image_url = p[i].url.toString();
+            final int time = p[i].time;
+
+            // ImageLoader class instance
+            ImageLoader imgLoader = new ImageLoader(getApplicationContext());
+
+            imgLoader.DisplayImage(image_url, image);
+        }
+    }
+
 
     /**
      * The Time is given in the format :
@@ -253,7 +267,12 @@ public class FullscreenActivity extends AppCompatActivity {
      * @return Time of corresponding picture
      */
     private int getTime(String p) {
-        return Integer.parseInt(p.replace("{","").replace("}", "").replace("time=","").replace("url=","").split(",")[0]);
+        String[] k = p.replace("{","").replace("}", "").split(",");
+        if (k[0].contains("time")) {
+            return Integer.parseInt(k[0].split("=")[1]);
+        } else {
+            return Integer.parseInt(k[1].split("=")[1]);
+        }
     }
 
     /**
@@ -269,7 +288,14 @@ public class FullscreenActivity extends AppCompatActivity {
         URL u = null;
 
         try {
-            u = new URL(p.replace("{","").replace("}", "").replace("time=","").replace("url=","").split(",")[1]);
+            String[] k = p.replace("{","").replace("}", "").split(",");
+            String res = "";
+            if (k[0].contains("url")) {
+                res = k[0].split("=")[1];
+            } else {
+                res = k[1].split("=")[1];
+            }
+            u = new URL(res);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }

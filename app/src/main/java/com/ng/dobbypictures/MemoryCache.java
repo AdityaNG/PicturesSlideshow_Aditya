@@ -26,9 +26,9 @@ public class MemoryCache {
     }
 
     /**
-     *
-     * @param id
-     * @param bitmap
+     * Put Bitmap by Key
+     * @param id Key
+     * @param bitmap Corresponding Bitmap for said Key
      */
     public void put(String id, Bitmap bitmap){
         cache.put(id, new SoftReference<Bitmap>(bitmap));

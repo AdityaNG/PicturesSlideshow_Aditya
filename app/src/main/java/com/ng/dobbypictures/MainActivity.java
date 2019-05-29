@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                         requestPermissionForExternalStorage();
                     }
                 } else {
-                    requestPermissionForExternalStorage();
+                    startSlideShow(channel.getSelectedItem().toString());
                 }
             }
         });
