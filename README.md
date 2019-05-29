@@ -2,7 +2,7 @@
 - An Android App (API Level 19 or above) to Display Downloaded Images
 - Displays image loop
 - Checks for update at end of loop
-- Chose from multiple channels
+- Choose from multiple channels
 - Picture's time configuration pulled from Firebase servers.
 
 - Download the APK from : https://github.com/AdityaNG/PicturesSlideshow_Aditya/blob/master/app-debug.apk
